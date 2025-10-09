@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List Item</title>
+    <link rel="stylesheet" href="./fan.css">
+    
+</head>
+<body>
+    <div id="main">
+        <h2>Input Box</h2>
+        <div id="mydata">
+            <input type="text" id="inputData" placeholder="Enter any content">
+            <ol id="list">
+                <li>data member</li>
+                <li>data set</li>
+                <li>data attribute</li>
+            </ol>
+            <button id="btn">Add item</button>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const input = document.getElementById("inputData");
+        const list = document.getElementById("list");
+
+        btn.addEventListener("click", () => {
+            const value = input.value.trim();
+            if (value === "") {
+                alert("Please enter something!");
+                return;
+            }
+
+            const li = document.createElement("li");
+            li.textContent = value;
+            list.appendChild(li);
+            input.value = ""; // clear input
+        });
+    </script>
+</body>
+</html>
