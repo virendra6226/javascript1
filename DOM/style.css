@@ -1,0 +1,39 @@
+#main {
+  background: rgba(101, 0, 0, 0.723);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-left: 550px;
+  width: 350px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+h2 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+#mydata input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 34px;
+  color: black;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+ol {
+  text-align: left;
+  color: black;
+}
+
+button {
+  background-color: #7f09ed;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}

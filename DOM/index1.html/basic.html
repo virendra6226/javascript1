@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virendra one two three virendra query selectors</title>
+</head>
+
+<body>
+    <!-- <h1>one two three virendra</h1>
+    <h1>one two three virendra</h1>
+    <h1>one two three virendra</h1>
+    <h1>one two three virendra</h1>
+    <h1>one two three virendra</h1> -->
+    <input type="email" placeholder="enter your name">
+    <button>click me!</button>
+</body>
+<script>
+
+    let allData=document.querySelectorAll("h1");
+    
+    allData.forEach((item)=>{
+    })
+    let myElement = document.querySelector("input");
+    let btn = document.querySelector("button")
+
+    btn.addEventListener("click", () => {
+        if (btn.innerHTML == "click me!") {
+            myElement.type = "password";
+            btn.innerHTML = "hide";
+
+        }
+        else {
+
+            myElement.type = "email"
+            btn.innerHTML = "click me!"
+        }
+    });
+
+
+</script>
+
+</html>
